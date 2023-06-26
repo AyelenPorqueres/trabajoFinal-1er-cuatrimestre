@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+
+    background-color: white;
+    position: relative;
+    padding-bottom: 8em;
+}
+
+
+.colornav {
+    background-color: #CCDFB6;
+
+}
+
+.menu ul li a {
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+.contenedorimagenes {
+    align-items: center;
+    padding: 20px;
+}
+
+#galeriaprincipal .col-lg-4 {
+    padding: 25px;
+}
+
+#galeriaprincipal img {
+    width: 100%;
+    height: 280px;
+}
+
+figcaption {
+    text-align: center;
+
+}
+
+.text-main {
+    text-align: center;
+}
+
+.titulo {
+    color: rgb(53, 137, 38);
+}
+
+.parrafo {
+    margin: 70px;
+    border: 1px solid forestgreen;
+
+}
+
+.parrafo p {
+    font-size: 20px;
+    font-style: normal;
+
+}
+
+footer {
+    background-color: #CCDFB6;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+footer h2 {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+/*pseudoclases*/
+a:link {
+    color: #0d0d0d;
+}
+
+a:visited {
+    color: #CCDFB6;
+
+}
+
+.contacto1 {
+    width: 500px;
+    height: 750px;
+    background-color: #CCDFB6;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-style: normal;
+    color: black;
+}
+
+.contacto1 .titulocontacto {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contacto1 .contacto {
+    width: 100%;
+    background-color: rgb(201, 207, 200);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid grey;
+    font-style: normal;
+    font-size: 18px;
+
+}
+
+.contacto1 .mensaje {
+    font-size: 20px;
+}
+
+.contacto1 .textarea {
+    width: 100%;
+    background-color: beige;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid grey;
+}
+
+.contacto1 .botones {
+    width: 100%;
+    background-color: beige;
+    border: none;
+    padding: 10px;
+    color: rgb(18, 87, 26);
+    margin: 5px 0;
+    font-size: 16px;
+
+}
+
+.contenedorgaleriafunciones {
+    align-items: center;
+    padding: 20px;
+}
+
+#galeriafunciones .col-lg-3 {
+    padding: 50px;
+}
+
+#galeriafunciones img {
+    width: 100%;
+    height: 230px;
+}
+
+.contenedorfunciones {
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedorfunciones p {
+    text-align: center;
+}
+
+.registro {
+    width: 400px;
+    background-color:#CCDFB6;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Roboto;
+    color: black;
+}
+
+.registro .leyenda{
+    text-align: center;
+    font-style: normal;
+}
+
+.registro .micuenta {
+    width: 100%;
+    background:  rgb(201, 207, 200);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid gray;
+    font-family: serif;
+    font-size: 18px;
+}
+
+.registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.registro.iniciosesion {
+    color: #010101;
+    font-size: 15px;
+    text-align: center;
+}
+
+.registro .boton {
+    width: 100%;
+    background: beige;
+    border: none;
+    padding: 10px;
+    color:rgb(18, 87, 26) ;
+    margin: 10px 0;
+    font-size: 16px;
+}
