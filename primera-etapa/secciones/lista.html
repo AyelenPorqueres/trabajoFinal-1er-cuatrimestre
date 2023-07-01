@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <title> Be organized!</title>
 </head>
 
@@ -16,7 +17,8 @@
         <nav class="navbar navbar-expand-lg  colornav">
             <div class="container-fluid">
                 <a class="navbar-brand collapse navbar-collapse menu" id="navbarResponsive" href="../index.html">
-                    <img src="../img/logo1.png" alt="Logo" width="300" height="150" class="d-inline-block align-text-top">
+                    <img src="../img/logo1.png" alt="Logo" width="300" height="150"
+                        class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -29,17 +31,17 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../secciones/funciones.html">FUNCIONES</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="../secciones/funciones.html">FUNCIONES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../secciones/contacto.html">CONTACTO</a>
+                            <a class="nav-link active" aria-current="page" href="../secciones/lista.html">LISTA DE
+                                TAREAS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../secciones/micuenta.html">MI CUENTA</a>
+                            <a class="nav-link active" aria-current="page" href="../secciones/micuenta.html">MI
+                                CUENTA</a>
                         </li>
-                       
-
-
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" aria-label="Search">
@@ -49,28 +51,19 @@
             </div>
         </nav>
     </header>
-    <section class="contacto1" id="contacto">
+    
+        <div class="contenedorlista" >
+            <h1 class="titulolista">TAREAS A REALIZAR</h1>
+            <div class="contenedordeinputs">
+                <input type="text" class="inputstext" id="input">
+                <button class="botoninputs" id="botoninputs">Añadir</button>
+            </div>
+            <div class="contenedorlista2">
+              
+            </div>
 
-        <h1 class="contactanos__titulo--md titulocontacto"> CONTÁCTANOS </h1>
-        <!-- Inicia el form -->
-
-        <form action="envio.php" method="post" id="contactos">
-            <fieldset>
-                <legend class="mensaje">DATOS PERSONALES</legend>
-                <input class="contacto" type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre">
-                <input class="contacto" type="text" placeholder="Ingrese su apellido" name="apellido" id="apellido">
-                <input class="contacto" type="text" placeholder="Ingrese su email" name="email" id="email">
-                <label class="mensaje" for="mensaje">DEJA TU MENSAJE</label> <br>
-                <textarea class="textarea" name="mensaje" id="mensaje" cols="85" rows="10"></textarea>
-                <input class="botones btn btn-secondary " type="reset" value="Cancelar">
-                <input class="botones btn btn-secondary " type="submit " value="Enviar">
-            </fieldset>
-
-        </form>
-
-
-
-    </section>
+        </div>
+    
     <footer>
 
         <h2> REDES SOCIALES</h2>
@@ -88,4 +81,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9bf699ba6b.js" crossorigin="anonymous"></script>
+    <script src="lista.js"></script>
 </body>

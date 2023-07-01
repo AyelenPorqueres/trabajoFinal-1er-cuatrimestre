@@ -13,6 +13,8 @@ body {
     background-color: white;
     position: relative;
     padding-bottom: 8em;
+   
+
 }
 
 
@@ -42,6 +44,7 @@ body {
 #galeriaprincipal img {
     width: 100%;
     height: 280px;
+    
 }
 
 figcaption {
@@ -97,7 +100,7 @@ a:visited {
 
 .contacto1 {
     width: 500px;
-    height: 750px;
+    height: 800px;
     background-color: #CCDFB6;
     padding: 30px;
     margin: auto;
@@ -131,7 +134,7 @@ a:visited {
 
 .contacto1 .textarea {
     width: 100%;
-    background-color: beige;
+    background-color: white;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid grey;
@@ -151,6 +154,7 @@ a:visited {
 .contenedorgaleriafunciones {
     align-items: center;
     padding: 20px;
+    
 }
 
 #galeriafunciones .col-lg-3 {
@@ -160,6 +164,9 @@ a:visited {
 #galeriafunciones img {
     width: 100%;
     height: 230px;
+    /* border-color: rgb(29, 97, 35); */
+    box-shadow: rgba(60, 105, 42, 0.87) 0px 5px 15px;
+
 }
 
 .contenedorfunciones {
@@ -168,28 +175,30 @@ a:visited {
 }
 
 .contenedorfunciones p {
+    padding: 8px;
     text-align: center;
+    font-size: 18px;
 }
 
 .registro {
     width: 400px;
-    background-color:#CCDFB6;
+    background-color: #CCDFB6;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
-    font-family: Roboto;
     color: black;
 }
 
-.registro .leyenda{
+.registro .titulo2 {
+    font-size: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    font-style: normal;
 }
 
 .registro .micuenta {
     width: 100%;
-    background:  rgb(201, 207, 200);
+    background: rgb(201, 207, 200);
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -216,7 +225,108 @@ a:visited {
     background: beige;
     border: none;
     padding: 10px;
-    color:rgb(18, 87, 26) ;
+    color: rgb(18, 87, 26);
     margin: 10px 0;
     font-size: 16px;
+}
+
+
+.contenedorlista{
+    width: 400px;
+    height: 100%; 
+    padding: 30px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 4px;
+    background-color: #CCDFB6;
+}
+
+.titulolista{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+.contenedordeinputs{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.inputstext{
+    width: 60%;
+    height: 40px;
+    border: 1px solid green;
+    color: rgb(0, 0, 0);
+    
+}
+
+.botoninputs{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background: #0d0d0d;
+    color: #CCDFB6;
+    cursor: pointer;
+
+}
+
+.contenedorlista2{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.contenedortareas1{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.contenedortareas2{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.casillaverificacion{
+    position: relative;
+    left: 10px;
+    
+}
+
+.tareas{
+    position: relative;
+    left: 50px;
+    color: rgb(15, 15, 15);
+    
+}
+
+.botoneliminartareacont{
+    width: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoneliminar{
+    border: 0;
+    background: 0;
+    align-items: center;
+}
+
+.fas{
+    font-size: 30px ;
+
+}
+
+.mensaje-error{
+    color: red;
 }

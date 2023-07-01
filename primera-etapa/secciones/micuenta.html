@@ -16,7 +16,8 @@
         <nav class="navbar navbar-expand-lg  colornav">
             <div class="container-fluid">
                 <a class="navbar-brand collapse navbar-collapse menu" id="navbarResponsive" href="../index.html">
-                    <img src="../img/logo1.png" alt="Logo" width="300" height="150" class="d-inline-block align-text-top">
+                    <img src="../img/logo1.png" alt="Logo" width="300" height="150"
+                        class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -29,17 +30,17 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../secciones/funciones.html">FUNCIONES</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="../secciones/funciones.html">FUNCIONES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../secciones/contacto.html">CONTACTO</a>
+                            <a class="nav-link active" aria-current="page" href="../secciones/lista.html">LISTA DE
+                                TAREAS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../secciones/micuenta.html">MI CUENTA</a>
+                            <a class="nav-link active" aria-current="page" href="../secciones/micuenta.html">MI
+                                CUENTA</a>
                         </li>
-                       
-
-
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" aria-label="Search">
@@ -50,29 +51,45 @@
         </nav>
     </header>
     <main>
-		<section class="registro">
-
-			
-			<form action="envio.php" method="post" id="mi cuenta">
-				<fieldset>
-					<legend class="leyenda">CREA UNA CUENTA</legend>
-
-					<input class="micuenta" type="text" placeholder="Ingrese su nombre" name="nombres" id="nombres">
-					<input class="micuenta" type="text" placeholder="Ingrese su apellido" name="apellidos"
-						id="apellidos">
-					<input class="micuenta" type="text" placeholder="Ingrese su usuario" name="usuario" id="usuario">
-					<input class="micuenta" type="password" placeholder="Ingrese su contraseña" name="contraseña" id="
-						contraseña">
-					<input class="micuenta" type="email" placeholder="Ingrese su correo" name="usuario" id="correo">
-					<input class="boton btn btn-secondary" type="submit" value="Registrar">
-					<p class="iniciosesion">¿Tenés cuenta? Inicia sesión </p>
-				</fieldset>
-			</form>
+        <section class="registro">
 
 
+            <form id="mi-cuenta">
+                <fieldset>
+                    <h2 class="titulo2"> CREA UNA CUENTA </h2>
 
-		</section>
-	</main>
+                    <small id="error-nombre-cuenta" class="mensaje-error resetear"></small>
+                   
+                    <input class="micuenta" type="text" placeholder="Ingrese su nombre" name="nombres"
+                        id="nombres-cuenta" required>
+                   
+                        <small id="error-apellido-cuenta" class="mensaje-error resetear"></small>
+                    <input class="micuenta" type="text" placeholder="Ingrese su apellido" name="apellidos"
+                        id="apellidos-cuenta" required>
+                   
+                        <small id="error-usuario-cuenta" class="mensaje-error resetear"></small>
+                   
+                    <input class="micuenta" type="text" placeholder="Ingrese su usuario" name="usuario"
+                        id="usuario-cuenta" required>
+                   
+                        <small id="error-contrasenia-cuenta" class="mensaje-error resetear"></small>
+                   
+                    <input class="micuenta" type="password" placeholder="Ingrese su contrasenia" name="contraseña" id="contrasenia-cuenta" required>
+                   
+                        <small id="error-email-cuenta" class="mensaje-error resetear"></small>
+
+                    <input class="micuenta" type="email" placeholder="Ingrese su correo" name="usuario"
+                        id="correo-cuenta" required>
+                    <button id="boton-enviar-cuenta" class="boton btn btn-secondary" type="submit"
+                        value="Registrar">REGISTRARSE</button>
+                    <p class="iniciosesion">¿Tenés cuenta? Inicia sesión </p>
+                </fieldset>
+            </form>
+
+
+
+        </section>
+    </main>
 
     <footer>
 
@@ -91,4 +108,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="micuenta.js"> </script>
 </body>
