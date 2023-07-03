@@ -1,3 +1,5 @@
+
+
 const botonenviar = document.getElementById ("boton-enviar")
 const contacto = document.getElementById("contactos")
 const nombre = document.getElementById ("nombre")
@@ -11,10 +13,10 @@ function campoNombre(){
         document.getElementById("error-nombre").innerHTML = "El campo nombre es requerido";
         nombre.classList.add('is-invalid');
     }else if(valorNombre.length < 6 ){
-        document.getElementById ("error-nombre").innerHTML = "El campo nombre debe tener más de 6 caracteres";
+        document.getElementById("error-nombre").innerHTML = "El campo nombre debe tener más de 6 caracteres";
         nombre.classList.add('is-invalid');
     }else{
-        document.getElementById ("error-nombre").innerHTML = "";
+        document.getElementById("error-nombre").innerHTML = "";
         nombre.classList.remove('is-invalid');
     }
 }
@@ -25,7 +27,7 @@ function campoApellido(){
         document.getElementById("error-apellido").innerHTML = "El campo apellido es requerido";
         apellido.classList.add('is-invalid');
     }else{
-        document.getElementById ("error-apellido").innerHTML = "";
+        document.getElementById("error-apellido").innerHTML = "";
         apellido.classList.remove('is-invalid');
     }
 }
@@ -36,7 +38,7 @@ function campoEmail(){
         document.getElementById("error-email").innerHTML = "El campo email es requerido";
         email.classList.add('is-invalid');
     }else{
-        document.getElementById ("error-email").innerHTML = "";
+        document.getElementById("error-email").innerHTML = "";
         email.classList.remove('is-invalid');
     }
 }
@@ -45,7 +47,7 @@ contacto.addEventListener ("click", validarFormulario);
 botonenviar.addEventListener ("click", resetearFormulario);
 
 function validarFormulario (e){
-     e.preventDefault();
+    e.preventDefault();
     
     campoNombre();
     campoApellido();
